@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+        <title> GPA Calculator </title>
+    </head>
+    <body>
+
+        <section id="navigationbar">
+            <!-- As a heading -->
+            <nav class="navbar navbar-light bg-light">
+              <a class="navbar-brand" href="#">GPA Calculator <small class="text-muted"> by jyotir </small></a>
+
+            </nav>
+
+        </section>
+
+        <section id="main">
+
+            <div class="welcome">
+                <h1> Welcome to GPA Calculator! </h1>
+            </div>
+
+
+            <div class="card" style="width: 21.5rem;">
+              <div class="card-body">
+                  <h5> Please Enter Grades Below</h5>
+
+                  <table id="tbl" class="table">
+
+                        <tr>
+                        <td>
+                            <div class="input-group flex-nowrap">
+                              <input type="text" class="form-control" placeholder="Letter Grade" id="letter1">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="input-group flex-nowrap" >
+                                  <input type="text" class="form-control" placeholder="Weighting" id="weight1">
+                                </div>
+                        </td>
+                        </tr>
+
+                      <tr>
+                        <td>
+                            <div class="input-group flex-nowrap" >
+                                  <input type="text" class="form-control" placeholder="" id="letter2">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="input-group flex-nowrap" >
+                                  <input type="text" class="form-control" placeholder="" id="weight2">
+                                </div>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>
+                            <div class="input-group flex-nowrap" >
+                              <input type="text" class="form-control" placeholder="" id="letter3">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="input-group flex-nowrap" >
+                                  <input type="text" class="form-control" placeholder="" id="weight3">
+                                </div>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>
+                            <div class="input-group flex-nowrap" >
+                                  <input type="text" class="form-control" placeholder="" id="letter4">
+                                </div>
+                        </td>
+                        <td>
+                            <div class="input-group flex-nowrap" >
+                                  <input type="text" class="form-control" placeholder="" id="weight4">
+                                </div>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>
+                            <div class="input-group flex-nowrap" >
+                              <input type="text" class="form-control" placeholder="" id="letter5">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="input-group flex-nowrap" >
+                                  <input type="text" class="form-control" placeholder="" id="weight5">
+                                </div>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>
+                            <div class="input-group flex-nowrap" >
+                                  <input type="text" class="form-control" placeholder="" id="letter6">
+                                </div>
+                        </td>
+                        <td>
+                            <div class="input-group flex-nowrap" >
+                                  <input type="text" class="form-control" placeholder="" id="weight6">
+                                </div>
+                        </td>
+                      </tr>
+
+
+
+
+
+                      <tr>
+                        <td>
+                            <h4>
+                                <button onclick="gpaCalc()" type="button" class="btn btn-outline-primary" id="calculate">Click for GPA</button>
+                            </h4>
+
+                        </td>
+                        <td>
+                            <div class="input-group flex-nowrap">
+                                  <input type="text" class="form-control" placeholder=""  id="gpa" readonly>
+                                </div>
+                        </td>
+                      </tr>
+
+
+                  </table>
+              </div>
+            </div>
+
+
+
+
+
+
+
+        </section>
+
+
+    <script src="index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    </body>
+</html>
