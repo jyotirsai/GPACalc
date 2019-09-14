@@ -1,13 +1,11 @@
 
 function gpaCalc() {
 
+// Get the number of rows to loop through
+var numOfRows = document.getElementById("tbl").rows.length;
 
-var grade1 = document.getElementById("letter1").value; // unneccesary
-
-var numOfRows = document.getElementById("tbl").rows.length; // Get the number of rows to loop through
-var storedGrades = []; // empty array that will store grade values
-
-
+// empty array that will store grade values
+var storedGrades = [];
 
 // loops through elements in letter grades and stores them in array
 
@@ -20,18 +18,13 @@ for (i=1; i < numOfRows; i++) {
 
 }
 
-
-var finalGrades = storedGrades.filter(Boolean); // Remove blank values, all grade values
-
-
-var gradesLength = finalGrades.length
-
+// Remove any blank values user may have entered
+var finalGrades = storedGrades.filter(Boolean);
 
 var numGrades = []
 
 // Change letter grades to numbers
-
-for (i=0; i < gradesLength; i++) {
+for (i=0; i < finalGrades.length; i++) {
 
   switch (finalGrades[i]) {
     case "A+":
@@ -83,49 +76,35 @@ for (i=0; i < gradesLength; i++) {
       break;
 
   }
-
-  console.log(numGrades);
-
 }
 
-
-var storedWeights = []; // empty array that will store weight values
-
+// empty array that will store weight values
+var storedWeights = [];
 
 // loops through elements in grade weightings and stores them in array
-
 for (i=1; i < numOfRows; i++) {
 
     var weight = "weight"+i;
     var weightValue = document.getElementById(weight).value;
 
     storedWeights.push(weightValue);
-
-
-
 }
 
-var strWeights = storedWeights.filter(Boolean); // Remove blank values, contains all weights as string
+// Remove blank values user may have entered
+var strWeights = storedWeights.filter(Boolean);
 
-var finalWeights = strWeights.map(Number); // Convert array of strings to numbers
-
-
-console.log(finalWeights);
-
+// Convert array of strings to their number equivalent
+var finalWeights = strWeights.map(Number);
 
 // function to sum an array
 function sum(arr) {
 
           var s = 0;
-
           for(var i = 0; i < arr.length; i++) {
-
       s = s + arr[i];
-
     }
-
     return s;
-
+    
 }
 
 var sumOfWeights = sum(finalWeights);
